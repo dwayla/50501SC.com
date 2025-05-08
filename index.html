@@ -25,10 +25,11 @@
     a {
       color: #000;
       text-decoration: none;
-      transition: color 0.2s ease;
+      transition: color 0.2s ease, text-decoration 0.2s ease;
     }
     a:hover {
-      color: #ba0e34;
+      color: #ba0e34; /* Your red */
+      text-decoration: underline;
     }
     .content {
       width: 90%;
@@ -40,14 +41,17 @@
       margin-bottom: 1rem;
     }
     footer {
-      margin-top: 2rem;
+      margin-top: 4rem;
       text-align: center;
+      font-size: 10pt; /* Smaller font size like GitHub's footer */
+      line-height: 1.5;
     }
     footer a {
-      font-size: 12pt;
+      font-size: 10pt;
+      margin-right: 1rem;
     }
     footer .copyright {
-      font-size: 10pt;
+      font-size: 9pt;
     }
     @media (max-width: 768px) {
       .content {
@@ -67,6 +71,7 @@
   </div>
   <footer>
     <a href="mailto:help@50501SC.com">help@50501SC.com</a>
+    <a href="terms_of_use_50501sc.html">Terms of Use</a>
     <div class="copyright">&copy; 2025</div>
   </footer>
 </body>
