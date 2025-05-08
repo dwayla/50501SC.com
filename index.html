@@ -7,7 +7,7 @@
   <style>
     body {
       background-color: #e0e7e8;
-      font-family: sans-serif;
+      font-family: 'Tahoma', 'Verdana', 'Helvetica', 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      text-align: center;
       color: #000;
     }
     img {
@@ -31,17 +30,44 @@
     a:hover {
       color: #ba0e34;
     }
+    .content {
+      width: 90%;
+      max-width: 800px;
+      text-align: left;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
     footer {
-      margin-top: 4rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    footer a {
+      font-size: 12pt;
+    }
+    footer .copyright {
       font-size: 10pt;
+    }
+    @media (max-width: 768px) {
+      .content {
+        width: 95%;
+      }
     }
   </style>
 </head>
 <body>
   <img src="indexlogo.png" alt="50501SC.com Logo" />
-  <p>This site is under construction, but we work fast!</p>
+  <div class="content">
+    <h1>About 50501SC.com: Empowering Your Action in South Carolina</h1>
+    <p>50501SC.com is part of the broader decentralized 50501 movement—inclusive, non-violent, and focused on resolving conflict peacefully. Here at 50501SC.com, we’re independent but aligned with the goal of upholding the Constitution and fighting executive overreach.</p>
+    <p>We believe in the power of people to act with integrity when they’re trusted and informed. That’s why we don’t micromanage. As long as actions fit our core values—defending rights, non-violence, and integrity—we’re all in to support each other.</p>
+    <p>While other groups in SC may have similar names, 50501SC.com is its own thing. We’re about connecting and empowering people statewide with tools, info, and solidarity—no gatekeeping.</p>
+    <p>If you’re ready to stand up for our rights and values, with courage and compassion, you’re in the right place. We love you and we are glad you’re here.</p>
+  </div>
+  <footer>
     <a href="mailto:help@50501SC.com">help@50501SC.com</a>
-  </p>
-  <footer>&copy; 2025</footer>
+    <div class="copyright">&copy; 2025</div>
+  </footer>
 </body>
 </html>
